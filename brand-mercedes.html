@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../DeluxCarMoto/assets/css/styles.css">
+    <script src="assets/js/script.js"></script>
+</head>
+<body>
+     <div class="navbar">
+        <a href="index.html">
+            <div class="logo">
+                <img src="../DeluxCarMoto/assets/images/icons/logo.png" alt="LOGO" height="120px" width="150px">
+            </div>
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li class="dropdown">
+                <a href="#">BRANDS</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="brand-bmw.html">BMW</a></li>
+                        <li><a href="brand-mercedes.html">Mercedes</a></li>
+                        <li><a href="brand-bugatti.html">Bugatti</a></li>
+                        <li><a href="brand-ferrari.html">Ferrari</a></li>
+                        <li><a href="brand-Lamborghini.html">Lamborghini</a></li>
+                        <li><a href="brand-landrover.html">LandRover</a></li>
+                        <li><a href="brand-Porsche.html">Porche</a></li>
+                        <li><a href="brand-rollsroyce.html">RollsRoyce</a></li>
+                    </ul>
+            </li>
+            <li><a href="contact.html">CONTACT US</a></li>
+        </ul>
+    </div>
+
+    <div class="brand-hero Mercedes-hero">
+        <div class="brand-text">
+            <h1>MERCEDES</h1>
+            <p>The Best or Nothing</p>
+        </div>
+    </div>
+
+    <div class="brand-cars">
+        <h2>MERCEDES MODELS</h2>
+        <div class="car-grid">
+            <div class="car-card" onclick="openPreview('Mercedes-Maybach S-Class')">
+                <img src="../DeluxCarMoto/assets/images/car/Mercedes/Mercedes-Maybach S-Class.webp" alt="Mercedes-Maybach S-Class">
+                <h3>Mercedes-Maybach S-Class</h3>
+                <p>Luxury sedan</p>
+            </div>
+             <div class="car-card" onclick="openPreview('Mercedes-Maybach-GLS')">
+                <img src="../DeluxCarMoto/assets/images/car/Mercedes/Mercedes-Maybach-GLS.avif" alt="Mercedes-Maybach-GLS">
+                <h3>Mercedes-Maybach-GLS</h3>
+                <p>Luxury SUV</p>
+            </div>
+             <div class="car-card" onclick="openPreview('Mercedes-AMG S63E')">
+                <img src="../DeluxCarMoto/assets/images/car/Mercedes/Mercedes-AMG S63E.avif" alt="Mercedes-AMG S63E">
+                <h3>Mercedes-AMG S63E</h3>
+                <p>sophisticated luxury Sedan</p>
+            </div>
+            <div class="car-card" onclick="openPreview('Mercedes-AMG GLE53')">
+                <img src="../DeluxCarMoto/assets/images/car/Mercedes/Mercedes-AMG GLE53.avif" alt="Mercedes-AMG GLE53">
+                <h3>Mercedes-AMG GLE53</h3>
+                <p>Performance SUV</p>
+            </div>
+            <div class="car-card" onclick="openPreview('Mercedes-AMG G63')">
+                <img src="../DeluxCarMoto/assets/images/car/Mercedes/Mercedes-AMG G63.webp" alt="Mercedes-AMG G63">
+                <h3>Mercedes-AMG G63</h3>
+                <p>high-performance SUV</p>
+            </div>
+            <div class="car-card" onclick="openPreview('Mercedes CLE Cabriolet')">
+                <img src="../DeluxCarMoto/assets/images/car/Mercedes/Mercedes CLE Cabriolet.avif" alt="Mercedes CLE Cabriolet">
+                <h3>Mercedes CLE Cabriolet</h3>
+                <p>Luxury Convertible</p>
+            </div>
+            <div class="car-card" onclick="openPreview('Mercedes EQS')">
+                <img src="../DeluxCarMoto/assets/images/car/Mercedes/Mercedes EQS.avif" alt="Mercedes EQS">
+                <h3>Mercedes EQS</h3>
+                <p>The electric S-Class.</p>
+            </div>
+            <div class="car-card" onclick="openPreview('Mercedes-AMG GT Coupé')">
+                <img src="../DeluxCarMoto/assets/images/car/Mercedes/Mercedes-AMG GT Coupé.avif" alt="Mercedes-AMG GT Coupé">
+                <h3>Mercedes-AMG GT Coupé</h3>
+                <p>Grand Turismo Coupé</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="brand-info">
+        <div class="brand-info-content">
+             <h2>ABOUT MERCEDES</h2>
+                <p>
+                    Mercedes-Benz is a German multinational automotive manufacturer known for luxury cars, vans, and trucks, and is one of the world's most successful automakers. 
+                    Founded in 1926, the company has a history of innovation, particularly in safety and performance, and is a global leader in the development of high-end passenger vehicles. 
+                    The company is committed to future-forward innovations, including connectivity, automated driving, and alternative drives. 
+                </p>
+        </div>
+    </div>
+
+    <div id="car-preview" class="car-preview">
+    <div class="preview-content">
+        <span class="close-btn" onclick="closePreview()">&times;</span>
+        <img id="preview-img" src="" alt="Car Image">
+        <h2 id="preview-title"></h2>
+        <p id="preview-desc"></p><br>
+        <p id="preview-price"></p><br>
+        <a href="contact.html" class="book-btn">Book Test Drive</a>
+    </div>
+    </div>
+
+     <div class="footer">
+        <div class="footer-container">
+            <div class="footer-section about">
+                <a href="index.html"><img src="../DeluxCarMoto/assets/images/icons/logo.png" alt="LOGO" height="80px"></a>
+                <h2>DeluxCarMoto</h2>
+                <p>Your destination for luxury cars where passion meets performance. Drive your dream with the world's finest brands. And ours finest services</p>
+            </div>
+            <div class="footer-section links">
+                <h3>HELPFUL LINKS</h3>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="#">BRANDS</a></li>
+                    <li><a href="contact.html">CONTACT/TEST DRIVE</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 DeluxCarMoto. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

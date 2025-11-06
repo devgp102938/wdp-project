@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../DeluxCarMoto/assets/css/styles.css">
+    <script src="assets/js/script.js"></script>
+</head>
+<body>
+     <div class="navbar">
+        <a href="index.html">
+            <div class="logo">
+                <img src="../DeluxCarMoto/assets/images/icons/logo.png" alt="LOGO" height="120px" width="150px">
+            </div>
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li class="dropdown">
+                <a href="#">BRANDS</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="brand-bmw.html">BMW</a></li>
+                        <li><a href="brand-mercedes.html">Mercedes</a></li>
+                        <li><a href="brand-bugatti.html">Bugatti</a></li>
+                        <li><a href="brand-ferrari.html">Ferrari</a></li>
+                        <li><a href="brand-Lamborghini.html">Lamborghini</a></li>
+                        <li><a href="brand-landrover.html">LandRover</a></li>
+                        <li><a href="brand-Porsche.html">Porche</a></li>
+                        <li><a href="brand-rollsroyce.html">RollsRoyce</a></li>
+                    </ul>
+            </li>
+            <li><a href="contact.html">CONTACT US</a></li>
+        </ul>
+    </div>
+
+    <div class="brand-hero Bugatti-hero">
+        <div class="brand-text">
+            <h1>Bugatti</h1>
+            <p>Create the Incomparable</p>
+        </div>
+    </div>
+
+    <div class="brand-cars">
+        <h2>BUGATTI MODELS</h2>
+        <div class="car-grid">
+            <div class="car-card" onclick="openPreview('Bugatti TOURBILLON')">
+                <img src="../DeluxCarMoto/assets/images/car/Bugatti/bugatti tourbillon.jpg" alt="Bugatti TOURBILLON">
+                <h3>Bugatti TOURBILLON</h3>
+                <p>Hybrid Hypercar</p>
+            </div>
+             <div class="car-card" onclick="openPreview('Bugatti Mistral')">
+                <img src="../DeluxCarMoto/assets/images/car/Bugatti/Bugatti-Mistral.jpg" alt="Bugatti Mistral">
+                <h3>Bugatti Mistral</h3>
+                <p>Inspired by a legendary Wind</p>
+            </div>
+             <div class="car-card" onclick="openPreview('Bugatti Chiron')">
+                <img src="../DeluxCarMoto/assets/images/car/Bugatti/Bugatti Chiron.jpg" alt="Bugatti Chiron">
+                <h3>Bugatti Chiron</h3>
+                <p>Beauty meets Beast</p>
+            </div>
+            <div class="car-card" onclick="openPreview('Bugatti Divo')">
+                <img src="../DeluxCarMoto/assets/images/car/Bugatti/Bugatti Divo.jpg" alt="Bugatti Divo">
+                <h3>Bugatti Divo</h3>
+                <p>Track-focused Hypercar</p>
+            </div>
+            <div class="car-card" onclick="openPreview('Bugatti Centodieci')">
+                <img src="../DeluxCarMoto/assets/images/car/Bugatti/Bugatti Centodieci.jpg" alt="Bugatti Centodieci">
+                <h3>Bugatti Centodieci</h3>
+                <p>Bugatti's Legacy</p>
+            </div>
+            <div class="car-card" onclick="openPreview('Bugatti Solitaire')">
+                <img src="../DeluxCarMoto/assets/images/car/Bugatti/Bugatti Solitaire.jpg" alt="Bugatti Solitaire">
+                <h3>Bugatti Solitaire</h3>
+                <p>Exclusive One-Off Hypercar</p>
+            </div>
+             <div class="car-card" onclick="openPreview('Bugatti Veyron')">
+                <img src="../DeluxCarMoto/assets/images/car/Bugatti/Bugatti Veyron.avif" alt="Bugatti Veyron">
+                <h3>Bugatti Veyron</h3>
+                <p>Legendary Hypercar</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="brand-info">
+        <div class="brand-info-content">
+             <h2>ABOUT BUGATTI</h2>
+                <p>
+                   Bugatti is a French luxury automobile manufacturer founded in 1909 by Ettore Bugatti,
+                   known for producing high-end, high-performance cars. 
+                   Today, Bugatti is part of Bugatti Rimac, a joint venture between the Rimac Group and Porsche AG, and continues to hand-assemble its hypercars in Molsheim, France.
+                   The brand is associated with exclusivity, speed, and luxury, with historic models like the Type 35 and modern ones like the Chiron.
+                </p>
+        </div>
+    </div>
+
+    <div id="car-preview" class="car-preview">
+    <div class="preview-content">
+        <span class="close-btn" onclick="closePreview()">&times;</span>
+        <img id="preview-img" src="" alt="Car Image">
+        <h2 id="preview-title"></h2>
+        <p id="preview-desc"></p><br>
+        <p id="preview-price"></p><br>
+        <a href="contact.html" class="book-btn">Book Test Drive</a>
+    </div>
+    </div>
+
+     <div class="footer">
+        <div class="footer-container">
+            <div class="footer-section about">
+                <a href="index.html"><img src="../DeluxCarMoto/assets/images/icons/logo.png" alt="LOGO" height="80px"></a>
+                <h2>DeluxCarMoto</h2>
+                <p>Your destination for luxury cars where passion meets performance. Drive your dream with the world's finest brands. And ours finest services</p>
+            </div>
+            <div class="footer-section links">
+                <h3>HELPFUL LINKS</h3>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="#">BRANDS</a></li>
+                    <li><a href="contact.html">CONTACT/TEST DRIVE</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 DeluxCarMoto. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

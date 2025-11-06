@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../DeluxCarMoto/assets/css/styles.css">
+    <script src="assets/js/script.js"></script>
+</head>
+<body>
+     <div class="navbar">
+        <a href="index.html">
+            <div class="logo">
+                <img src="../DeluxCarMoto/assets/images/icons/logo.png" alt="LOGO" height="120px" width="150px">
+            </div>
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li class="dropdown">
+                <a href="#">BRANDS</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="brand-bmw.html">BMW</a></li>
+                        <li><a href="brand-mercedes.html">Mercedes</a></li>
+                        <li><a href="brand-bugatti.html">Bugatti</a></li>
+                        <li><a href="brand-ferrari.html">Ferrari</a></li>
+                        <li><a href="brand-Lamborghini.html">Lamborghini</a></li>
+                        <li><a href="brand-landrover.html">LandRover</a></li>
+                        <li><a href="brand-Porsche.html">Porche</a></li>
+                        <li><a href="brand-rollsroyce.html">RollsRoyce</a></li>
+                    </ul>
+            </li>
+            <li><a href="contact.html">CONTACT US</a></li>
+        </ul>
+    </div>
+
+    <div class="brand-hero bmw-hero">
+        <div class="brand-text">
+            <h1>BMW</h1>
+            <p>Sheer Driving Pleasure</p>
+        </div>
+    </div>
+
+    <div class="brand-cars">
+        <h2>BMW MODELS</h2>
+        <div class="car-grid">
+            <div class="car-card" onclick="openPreview('BMW i8')">
+                <img src="../DeluxCarMoto/assets/images/car/BMW/bmwi8.webp" alt="bmwi8">
+                <h3>BMW I8</h3>
+                <p>Hybrid Sports Coupe</p>
+            </div>
+             <div class="car-card" onclick="openPreview('BMW X7')">
+                <img src="../DeluxCarMoto/assets/images/car/BMW/bmwx7.jpg" alt="bmwx7">
+                <h3>BMW X7</h3>
+                <p>Luxury SUV</p>
+            </div>
+             <div class="car-card" onclick="openPreview('BMW M5')">
+                <img src="../DeluxCarMoto/assets/images/car/BMW/bmwm5.webp" alt="BMW M5">
+                <h3>BMW M5</h3>
+                <p>Performance Sedan</p>
+            </div>
+            <div class="car-card" onclick="openPreview('BMW i7')">
+                <img src="../DeluxCarMoto/assets/images/car/BMW/bmwi7.avif" alt="BMW i7">
+                <h3>BMW I7</h3>
+                <p>Luxury Electric Sedan</p>
+            </div>
+            <div class="car-card" onclick="openPreview('BMW Z4')">
+                <img src="../DeluxCarMoto/assets/images/car/BMW/bmwz4.avif" alt="BMW Z4">
+                <h3>BMW Z4</h3>
+                <p>convertible sports car</p>
+            </div>
+            <div class="car-card" onclick="openPreview('BMW M2CS')">
+                <img src="../DeluxCarMoto/assets/images/car/BMW/bmwm2cs.avif" alt="BMW M2CS">
+                <h3>BMW M2CS</h3>
+                <p>High-Performance Coupe</p>
+            </div>
+            <div class="car-card" onclick="openPreview('BMW XM')">
+                <img src="../DeluxCarMoto/assets/images/car/BMW/BMW XM.jpg" alt="BMW XM">
+                <h3>BMW XM</h3>
+                <p>Luxury Hybrid SUV</p>
+            </div>
+            <div class="car-card" onclick="openPreview('BMW IX xDrive50')">
+                <img src="../DeluxCarMoto/assets/images/car/BMW/bmwix-xDrive50.avif" alt="BMW IX xDrive">
+                <h3>BMW IX xDrive50</h3>
+                <p>Electric SUV</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="brand-info">
+        <div class="brand-info-content">
+             <h2>ABOUT BMW</h2>
+                <p>
+                    BMW, short for Bayerische Motoren Werke, is a German luxury automobile manufacturer 
+                    renowned for blending cutting-edge technology, design, and performance. 
+                    Founded in 1916, BMW continues to set benchmarks in engineering excellence and 
+                    driving pleasure, making every vehicle a masterpiece of innovation and craftsmanship.
+                </p>
+        </div>
+    </div>
+
+    <div id="car-preview" class="car-preview">
+    <div class="preview-content">
+        <span class="close-btn" onclick="closePreview()">&times;</span>
+        <img id="preview-img" src="" alt="Car Image">
+        <h2 id="preview-title"></h2>
+        <p id="preview-desc"></p><br>
+        <p id="preview-price"></p><br>
+        <a href="contact.html" class="book-btn">Book Test Drive</a>
+    </div>
+    </div>
+
+     <div class="footer">
+        <div class="footer-container">
+            <div class="footer-section about">
+                <a href="index.html"><img src="../DeluxCarMoto/assets/images/icons/logo.png" alt="LOGO" height="80px"></a>
+                <h2>DeluxCarMoto</h2>
+                <p>Your destination for luxury cars where passion meets performance. Drive your dream with the world's finest brands. And ours finest services</p>
+            </div>
+            <div class="footer-section links">
+                <h3>HELPFUL LINKS</h3>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="#">BRANDS</a></li>
+                    <li><a href="contact.html">CONTACT/TEST DRIVE</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 DeluxCarMoto. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
